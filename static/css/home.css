@@ -1,0 +1,104 @@
+.section {
+	position: relative;
+	height: 100vh;
+}
+
+.section .section-center {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#booking {
+	font-family: 'Lato', sans-serif;
+	background: rgb(255, 255, 255,50%);
+	background-size: cover;
+	background-position: center;
+	color: #191a1e;
+}
+/* MODEL NAME */
+.booking-cta h1 {
+	font-size: 55px;
+	text-transform: uppercase;
+	color: white;
+	font-weight:900;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
+/* INTRO */
+.booking-cta p {
+	font-size: 22px;
+	color: #d6d6d6;
+}
+.booking-form {
+	position: relative;
+	background: rgb(255, 255, 255,70%); 
+	max-width: 642px;
+	width: 100%;
+	margin: auto;
+	padding: 45px 25px 25px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.booking-form .form-group {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.booking-form .form-control {
+	background-color: #fff;
+	height: 65px;
+	padding: 0px 15px;
+	padding-top: 24px;
+	color: #191a1e;
+	border: 2px solid #dfe5e9;
+	font-size: 16px;
+	font-weight: 700;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 4px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+/* PLACE HOLDER */
+.booking-form .form-control::placeholder {
+	color: #aaaaaa;
+}
+
+
+/* BOX LABEL */
+.booking-form .form-label {
+	position: absolute;
+	top: 6px;
+	left: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 24px;
+	height: 24px;
+	font-size: 13px;
+	color: #000000;
+}
+
+/* SUBMIT BUTTON */
+.booking-form .submit-btn {
+	color: #fff;
+	background-color: #000000;
+	font-weight: 400;
+	height: 65px;
+	font-size: 18px;
+	border: none;
+	width: 100%;
+	border-radius: 10px;
+	text-transform: uppercase
+}
+
+/* SPACE BETWEEN MODEL NAME AND FORM BOX */
+.booking-cta {
+	margin-top: 0px;
+}
+

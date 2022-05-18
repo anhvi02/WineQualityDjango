@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Wine Quality</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="{% static 'css/home.css' %}" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'image/favicon.ico' %}"/>
+</head>
+
+<body>
+	<div id="booking" class="section" style="background-image: url(static/image/background.jpg);">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+                    <!-- MODEL NAME -->
+					<div class="col-md-4">
+						<div class="booking-cta">
+							<h1>Wine Quality Prediction Model</h1>
+							<p>
+                                A machine learning model that applies Linear Regresison algorithm in predicting 
+                                the quality of good or bad wine based on indicators of wine composition
+                            </p>
+						</div>
+					</div>
+
+                    <!-- FORM -->
+					<div class="col-md-7 col-md-offset-1">
+						<div class="booking-form">
+							{% csrf_token %}
+                            <!-- FORM -->
+							<form action="{% url 'result' %}">
+                                <!-- FIRST ROW -->
+								<div class="row">
+									<div class="col-md-4">
+										<div class="form-group">
+											<span class="form-label">Fixed Acidity</span>
+											<input class="form-control" type="number" placeholder="0-1" required name ='fixed acidity'>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<span class="form-label">Volatile acidity</span>
+											<input class="form-control" type="number" placeholder="0-1" required name ='volatile acidity'>
+										</div>
+									</div>
+
+                                    <div class="col-md-4">
+										<div class="form-group">
+											<span class="form-label">Residual sugar</span>
+											<input class="form-control" type="number" placeholder="0-1" required name ='residual sugar'>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4">
+										<div class="form-group">
+											<span class="form-label">Chlorides</span>
+											<input class="form-control" type="number" placeholder="0-1" required name ='chlorides'>
+										</div>
+									</div>
+
+                                    <div class="col-md-4">
+										<div class="form-group">
+											<span class="form-label">Free sulfur dioxide</span>
+											<input class="form-control" type="number" placeholder="0-1" required name ='free sulfur dioxide'>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<span class="form-label">Total sulfur dioxide</span>
+											<input class="form-control" type="number" placeholder="0-1" required name ='total sulfur dioxide'>
+										</div>
+									</div>
+								</div>
+                                
+								<div class="row">
+									<div class="col-md-4">
+										<div class="form-group">
+											<span class="form-label">Density</span>
+											<input class="form-control" type="number" placeholder="0-1" required name ='density'>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<span class="form-label">pH</span>
+											<input class="form-control" type="number" placeholder="0-1" required name ='pH'>
+										</div>
+									</div>
+
+                                    
+									<div class="col-md-4">
+										<div class="form-group">
+											<span class="form-label">Citric acid</span>
+											<input class="form-control" type="number" placeholder="0-1" required name ='citric acid'>
+										</div>
+									</div>
+								</div>
+                                <div class="row">
+									<div class="col-md-4">
+										<div class="form-group">
+											<span class="form-label">Sulphates</span>
+											<input class="form-control" type="number" placeholder="0-1" required name ='sulphates'>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<span class="form-label">Alcohol</span>
+											<input class="form-control" type="number" placeholder="0-1" required name ='alcohol'>
+										</div>
+									</div>
+
+								</div>
+								<div class="form-btn">
+									<button class="submit-btn">
+										<input  type="submit" value="PREDICT" style="color: white; background-color: black;"> 
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
+
