@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-k7am))d2i#!ka0vf_!^pr-hqa*6io$usj6lw&zks0316l0l3&t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['winequality-model.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['ml-winequality.herokuapp.com','127.0.0.1']
 
 
 # Application definition
