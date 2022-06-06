@@ -11,21 +11,24 @@
 		<div class="container">
 			<div class="row">
 				<!-- MODEL NAME -->
-				<div class="col-md-4">
+				<div class="col-md-4 col-auto">
 					<div class="intro">
-						<h1>Wine Quality Prediction Model</h1>
-						<p>
-							A machine learning model that applies Logistic Regresison algorithm in predicting 
-							the quality of good or bad wine based on indicators of wine composition
-							<br> <b> - developed by Vĩ Phạm</b>
-						</p>
+						<div class="row">
+							<h1 class="col-sm-12">Wine Quality Prediction Model</h1>
+							<p class="col-sm-12">
+								A machine learning model that applies Logistic Regressison algorithm in predicting 
+								the quality of good or bad wine based on indicators of wine composition
+								<br> <b> - developed by Vĩ Phạm</b>
+							</p>	
+						</div>
+
 					</div>
 				</div>
 
 				<!-- FORM -->
-				<div class="col-md-7 col-md-offset-1">
+				<div class="col-md-8 col-auto">
 					<div class="input-form">
-						<h1 id="recommend">INPUT SHOULD BE IN RECOMMMENDED VALUE RANGE</h1>
+						<h1 class="col-md-12" id="recommend">INPUT SHOULD BE IN RECOMMMENDED VALUE RANGE</h1>
 						{% csrf_token %}
 						<!-- FORM -->
 						<form action="{% url 'result' %}">
