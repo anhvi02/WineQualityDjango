@@ -1,1 +1,1 @@
-web: gunicorn wine.wsgi --log-file -
+web: gunicorn winequality.wsgi --log-file -
