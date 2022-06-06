@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Wine Quality Prediction</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- FAVICON -->
+	<link rel="shortcut icon" type="image/png" href="{% static 'image/favicon.ico' %}"/>
+
+    <!-- CSS SOURCE -->
+	{% block css_source %}
+		<!-- INHERIT HERE -->
+	{% endblock %}  
+
+</head>
+
+<body style="
+	background-image: url('/static/image/background.jpg');
+	background-size: cover;
+	background-position: center;">
+	
+	{% block body_block%}
+	<!-- INHERIT HERE -->
+	{% endblock %}
+	
+</body>
+
+</html>
+

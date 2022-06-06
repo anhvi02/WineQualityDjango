@@ -12,18 +12,23 @@
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
-
-#booking {
-	font-family: 'Lato', sans-serif;
-	background: rgb(255, 255, 255,50%);
-	background-size: cover;
-	background-position: center;
-	color: #191a1e;
+.input-form h1 {
+	font-size: 75px;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	font-weight:1000;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
+/* INTRO */
+.input-form h2 {
+	font-size: 18px;
+	font-weight: 600;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+	color: #d6d6d6;
 }
 
-.booking-form {
+.input-form {
 	position: relative;
-	background: rgb(255, 255, 255,70%); 
+	background: rgba(0, 0, 0, 20%); 
 	max-width: 642px;
 	width: 100%;
 	margin: auto;
@@ -31,4 +36,61 @@
 	border-radius: 4px;
 	-webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
 	box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+.input-form .form-control {
+	background-color: #fff;
+	height: 65px;
+	padding: 0px 15px;
+	padding-top: 30px;
+	color: #191a1e;
+	border: 2px solid #dfe5e9;
+	font-size: 16px;
+	font-weight: 700;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 4px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+/* BOX LABEL */
+.input-form .form-label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 6px;
+	left: 14px;
+	font-weight: 600;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-transform: uppercase;
+	line-height: 23px;
+	height: 23px;
+	font-size: 12px;
+	color: #000000;
+}
+
+.input-form .form-group {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+#returnbutton {
+	color: rgb(241, 9, 9);
+	background-color: #ffffff;
+	font-weight: 900;
+	height: 65px;
+	font-size: 19px;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	border: none;
+	width: 100%;
+	border-radius: 10px;
+	text-transform: uppercase;
+	cursor:pointer
+}
+#returnlink {
+    display: block;
+    width: 100%;
+    height: 100%;
+	padding-top: 3%;
+	color: rgb(172, 3, 3);
 }

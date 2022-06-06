@@ -7,19 +7,31 @@ def home(request):
 
 def result(request):
     reg = joblib.load("model/final_model.sav") 
-    lis = []
+    predict_val = []
 
-    cols = ['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar',
+    features = ['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar',
        'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density',
        'pH', 'sulphates', 'alcohol']
 
-    for col in cols:
-        lis.append(float(request.GET[col]))
+    for fea in features:
+        predict_val.append(float(request.GET[fea]))
 
-    answer = reg.predict([lis])
+    answer = reg.predict([predict_val])
     if answer == 0:
-        answer = 'Bad Quality'
+        answer = 'BAD QUALITY'
     else:
-        answer = 'Good Quality'
-    inputs = zip(cols, lis)
-    return render(request, 'predict/result.html',{'answer': answer,'inputs':inputs})
+        answer = 'GOOD QUALITY'
+
+    context = {
+        'answer' : answer
+    }
+    for fea, val in zip(features, predict_val):
+        context[fea.replace(' ','_')] = val
+    # render_cols = []
+    # for col in cols:
+    #     render_cols.append(col.capitalize())
+    # inputs = zip(render_cols, predict_val)
+    print(context)
+
+
+    return render(request, 'predict/result.html',context=context)
