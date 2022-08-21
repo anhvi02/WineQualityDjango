@@ -1,5 +1,5 @@
 -- What is this? -- 
-A machine learning model that applies Logistic Regressison algorithm in predicting the quality of good or bad wine based on indicators of wine composition
+A machine learning model that applies Logistic Regressison algorithm in predicting the quality of wine based on wine composition
 deployed with Django on Heroku
 
 -- What does it include? --
@@ -9,3 +9,5 @@ Data source: https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al
 
 -- How to access? -- 
 Heroku link: https://ml-winequality.herokuapp.com/
+
+-- Author -- ViPham 
