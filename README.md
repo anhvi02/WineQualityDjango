@@ -3,9 +3,9 @@ A machine learning model that applies Logistic Regression algorithm in predictin
 deployed with Django on Heroku
 
 -- What does it include? --
-1. model: consists of the dataset and the whole process of cleaning, building the model.
+1. Model: consists of the dataset and the whole process of cleaning, building the model.
 Data source: https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009
-2. Django files to build
+2. Django files to build the web
 
 -- How to access? -- 
 Heroku link: https://ml-winequality.herokuapp.com/
