@@ -7,6 +7,12 @@ deployed with Django on Heroku
 Data source: https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009
 2. Django files to build the web
 
+-- Technologies -- 
+- Python: pandas, numpy, scikit-learn
+- Django
+- Heroku
+- Statistic
+
 -- How to access? -- 
 Heroku link: https://ml-winequality.herokuapp.com/
 
